@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#main-container {
+  background-color: aquamarine;
+  padding: 20px;
+  width: 400px;
+  display: inline-block;
+}
+.container {
+  background-color: white;
+  padding: 15px;
+}
+.margin-bottom {
+  margin: bottom 20px;
+}
+ul {
+  list-style-type: circle;
+}
+[href = "https://www.w3.org/"]
+{
+  font-weight: bold;
+  color: red;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  background-color: lightblue;
+}
+
+a:active {
+  background-color: rgb(202, 168, 235);
+}
+
+a:visited {
+  color: lightgray;
+}
+
+div:hover {
+  background-color: aliceblue;
+}

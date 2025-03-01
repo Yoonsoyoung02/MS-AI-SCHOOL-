@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응형 앱 만들기</title>
+    <style>
+      /* 제목 스타일 */
+      .title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      /* 고흐와 뭉크 세로 배치 */
+      .fixed-boxes {
+        display: flex;
+        flex-direction: row;
+        width: 150px;
+        gap: 1px;
+        margin: auto;
+      }
+
+      .fixed-box {
+        border: 1px solid gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        font-weight: bold;
+        width: 400px;
+      }
+
+      /* 반응형 그리드 박스 */
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* 박스 크기를 이미지에 맞게 자동 조정 */
+      .box {
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: fit-content; /* 박스 크기를 이미지에 맞게 자동 조정 */
+        margin-top: 20px;
+      }
+
+      .box img {
+        width: 100%; /* 박스 크기에 맞게 조정 */
+        max-width: 300px; /* 최대 크기 제한 */
+        height: auto; /* 가로세로 비율 유지 */
+      }
+
+      .box p {
+        margin: 5px 0 0;
+        font-weight: bold;
+      }
+
+      /* 반응형 스타일 */
+      @media screen and (min-width: 480px) {
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        .container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 제목 -->
+    <h1 class="title">갤러리</h1>
+
+    <!-- 고흐 & 뭉크 세로 배치 -->
+    <div class="fixed-boxes">
+      <div class="fixed-box">고흐</div>
+      <div class="fixed-box">뭉크</div>
+    </div>
+
+    <!-- 반응형 박스 -->
+    <div class="container">
+      <div class="box">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/600px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+          alt="별이 빛나는 밤"
+        />
+        <p>별이 빛나는 밤</p>
+      </div>
+      <div class="box">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/600px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+          alt="별이 빛나는 밤"
+        />
+        <p>별이 빛나는 밤</p>
+      </div>
+      <div class="box">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/600px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+          alt="별이 빛나는 밤"
+        />
+        <p>별이 빛나는 밤</p>
+      </div>
+      <div class="box">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/600px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+          alt="별이 빛나는 밤"
+        />
+        <p>별이 빛나는 밤</p>
+      </div>
+      <div class="box">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/600px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+          alt="별이 빛나는 밤"
+        />
+        <p>별이 빛나는 밤</p>
+      </div>
+      <div class="box">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/600px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+          alt="별이 빛나는 밤"
+        />
+        <p>별이 빛나는 밤</p>
+      </div>
+    </div>
+  </body>
+</html>

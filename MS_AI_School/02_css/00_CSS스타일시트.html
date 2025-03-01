@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 스타일시트 종류 예시</title>
+    <!--1.외부 스타일시트-->
+    <link rel="stylesheet" href="02_글꼴스타일.css" />
+    <!--2.내부 스타일시트-->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: NAVY;
+      }
+      /* 3.임포트된스타일시트- */
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+      .imported {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 스타일시트 예시</h1>
+
+    <!--4.인라인 스타일-->
+    <p style="color: green; font-weight: bold">
+      이것은 인라인 스타일을 사용한 문단입니다.
+    </p>
+    <p class="imported">이 텍스트는 임포트된 Roboto 글꼴을 사용합니다.</p>
+  </body>
+</html>

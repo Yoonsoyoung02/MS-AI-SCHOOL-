@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap");
+
+.p1 {
+  /* font-family: "Nanum Pen Script", serif;
+  font-size: 2em;
+  font-style: normal; */
+  font: bold 1.5em "Noto Sans KR";
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 5px 5px 5px lightgray;
+  letter-spacing: 0.3em;
+  line-height: 10;
+}
+
+.p2 {
+  font-family: "Noto Sans KR", serif;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.p3 {
+  font-family: "Jua", serif;
+  font-size: 2rem;
+  font-size: normal;
+  font-weight: bold;
+}
+
+.p4 {
+  font-family: "Noto Sans KR", serif;
+  font-size: 8em;
+  text-shadow: 10px 10px 10px lightblue;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+}

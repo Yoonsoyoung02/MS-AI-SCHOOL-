@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박스모델</title>
+    <style>
+      .box1,
+      .box2,
+      .box3 {
+        width: 400px;
+        border: 10px, solid, black;
+        padding: 20px;
+        font-style: italic;
+        margin: 20px;
+      }
+      .box3 {
+        box-sizing: border-box;
+      }
+
+      .box3:hover {
+        box-shadow: 5px 5px 5px rgb(60, 194, 149);
+      }
+
+      .box3 {
+        border-radius: 30px;
+        border-width: 5px;
+      }
+
+      .box2 {
+        border: 5px, dashed, black;
+        box-sizing: border-box;
+        border-width: 1px 5px 10px 15px;
+        border-color: red blue green yellow;
+        border-top-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">나는 박스1입니다.</div>
+    <div class="box2">나는 박스2입니다.</div>
+    <div class="box3">나는 박스3입니다.</div>
+  </body>
+</html>

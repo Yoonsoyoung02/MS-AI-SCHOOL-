@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap");
+
+.p1 {
+  font-family: "Nanum Pen Script", serif;
+  font-weight: 500;
+  font-size: 1.8em;
+  font-style: normal;
+}
+
+.p2 {
+  font-family: "Noto Sans KR", serif;
+  font-size: em;
+}
+
+.p3 {
+  font-family: "Noto Sans KR", serif;
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: lighter;
+}
